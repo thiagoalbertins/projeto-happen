@@ -1,0 +1,379 @@
+<head>
+    <link rel="stylesheet" href="./perguntas.component.css">
+</head>
+    <div *ngIf="!submited2">
+        <h3 class="heading">1. A qual dos seguintes grupos listados abaixo sua empresa faz parte?</h3>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" [(ngModel)]="resposta.cat1" value="1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Resiliente (flexível) - Têm objetivos e estratégias bem definidos, e reage rapidamente às mudanças de mercado
+            </label>
+        </div>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" [(ngModel)]="resposta.cat1" value="2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Oligárquica - Diretorias experientes e comprometidas, impulsionam toda a empresa. Ótimas para a execução de estratégias
+            </label>
+        </div>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" [(ngModel)]="resposta.cat1" value="3">
+            <label class="form-check-label" for="flexRadioDefault3">
+                Just-in-time - É administrada num clima de improviso. Empresa jovem vivendo um ciclo de rápida expansão
+            </label>
+        </div>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" [(ngModel)]="resposta.cat1" value="4">
+            <label class="form-check-label" for="flexRadioDefault4">
+                Enérgico-dispersiva - Empresa dotada de um pessoal inteligente, talentoso e motivado. Marcada pela proposta de competição e voluntarismo, é um ambiente propício às novas ideias e produtos inovadores
+            </label>
+        </div>
+        <br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" [(ngModel)]="resposta.cat1" value="5">
+            <label class="form-check-label" for="flexRadioDefault5">
+                Enérgico-dispersiva - Empresa dotada de um pessoal inteligente, talentoso e motivado. Marcada pela proposta de competição e voluntarismo, é um ambiente propício às novas ideias e produtos inovadores
+            </label>
+        </div>
+        <br>
+    <h3 class="heading">2. Como a empresa reagiu à pandemia de COVID-19?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6"  [(ngModel)]="resposta.cat2" value="1">
+        <label class="form-check-label" for="flexRadioDefault6">
+            Ofereceu opção de trabalho remoto aos colaboradores
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault7"  [(ngModel)]="resposta.cat2" value="2">
+        <label class="form-check-label" for="flexRadioDefault7">
+            Recorreu imediatamente ao trabalho remoto
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault8"  [(ngModel)]="resposta.cat2" value="3">
+        <label class="form-check-label" for="flexRadioDefault8">
+            Tentou manter presencial pois o trabalho remoto afetava severamente a produção
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault9"  [(ngModel)]="resposta.cat2" value="4">
+        <label class="form-check-label" for="flexRadioDefault9">
+            Fez reunião interna para encontrar soluções ouvindo colaboradores
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault10"  [(ngModel)]="resposta.cat2" value="5">
+        <label class="form-check-label" for="flexRadioDefault10">
+            Buscou ferramentas especificas para manter a produção
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">3. Como a empresa comunica e estimula a criativadade dos colaboradores?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault11" [(ngModel)]="resposta.cat3" value="1">
+        <label class="form-check-label" for="flexRadioDefault11">
+            Quadro de avisos
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault12" [(ngModel)]="resposta.cat3" value="2">
+        <label class="form-check-label" for="flexRadioDefault12">
+            Grupos de WhatsApp
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault13" [(ngModel)]="resposta.cat3" value="3">
+        <label class="form-check-label" for="flexRadioDefault13">
+            E-mails institucionais
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault14" [(ngModel)]="resposta.cat3" value="4">
+        <label class="form-check-label" for="flexRadioDefault14">
+            Sistema de comunicação interno
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault15" [(ngModel)]="resposta.cat3" value="5">
+        <label class="form-check-label" for="flexRadioDefault15">
+            Não oferecemos desafios internos
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">4. Quais são as formas de recompensa para os colaboradores?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault16" [(ngModel)]="resposta.cat4" value="1">
+        <label class="form-check-label" for="flexRadioDefault16">
+            Bônus coletivos
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault17" [(ngModel)]="resposta.cat4" value="2">
+        <label class="form-check-label" for="flexRadioDefault17">
+            Prêmios especiais individuais
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault18" [(ngModel)]="resposta.cat4" value="3">
+        <label class="form-check-label" for="flexRadioDefault18">
+            Bônus financeiros
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault19" [(ngModel)]="resposta.cat4" value="4">
+        <label class="form-check-label" for="flexRadioDefault19">
+            Destaque em painel "Funcionário do mês"
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault20" [(ngModel)]="resposta.cat4" value="5">
+        <label class="form-check-label" for="flexRadioDefault20">
+            Bônus em carga horária
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">5. Como a empresa lida com conflitos no ambiente de trabalho?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault21" [(ngModel)]="resposta.cat5" value="1">
+        <label class="form-check-label" for="flexRadioDefault21">
+            Reuniões para gestão de conflitos
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault22" [(ngModel)]="resposta.cat5" value="2">
+        <label class="form-check-label" for="flexRadioDefault22">
+            Encontros temáticos, temas relacionados aos conflitos
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault23" [(ngModel)]="resposta.cat5" value="3">
+        <label class="form-check-label" for="flexRadioDefault23">
+            Advertência verbal/ Advertência escrita/ Suspensão/ Demissão
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault24" [(ngModel)]="resposta.cat5" value="4">
+        <label class="form-check-label" for="flexRadioDefault24">
+            Ouvidoria com anonimato
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault25" [(ngModel)]="resposta.cat5" value="5">
+        <label class="form-check-label" for="flexRadioDefault25">
+            Ouvidoria sem anonimato
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">6. Quais opções de Feedback a empresa utiliza?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault26" [(ngModel)]="resposta.cat6" value="1">
+        <label class="form-check-label" for="flexRadioDefault26">
+            Avaliação da equipe com reunião
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault27" [(ngModel)]="resposta.cat6" value="2">
+        <label class="form-check-label" for="flexRadioDefault27">
+            Reunião direta com colaborador
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault28" [(ngModel)]="resposta.cat6" value="3">
+        <label class="form-check-label" for="flexRadioDefault28">
+            Avaliação individual virtual (sem reunião)
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault29" [(ngModel)]="resposta.cat6" value="4">
+        <label class="form-check-label" for="flexRadioDefault29">
+            Avaliação da equipe sem reunião
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault6" id="flexRadioDefault30" [(ngModel)]="resposta.cat6" value="5">
+        <label class="form-check-label" for="flexRadioDefault30">
+            Quadro de desempenho púbico
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">7. Quais das opções abaixo a empresa usa para gerenciar tempo?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault31" [(ngModel)]="resposta.cat7" value="1">
+        <label class="form-check-label" for="flexRadioDefault31">
+            Construção de calendários com os colaboradores
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault32" [(ngModel)]="resposta.cat7" value="2">
+        <label class="form-check-label" for="flexRadioDefault32">
+            Reuniões diárias rápidas
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault33" [(ngModel)]="resposta.cat7" value="3">
+        <label class="form-check-label" for="flexRadioDefault33">
+            Construção de calendários via diretoria
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault34" [(ngModel)]="resposta.cat7" value="4">
+        <label class="form-check-label" for="flexRadioDefault34">
+            Usa de metodologia ágil (scrum ou outras)
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault7" id="flexRadioDefault35" [(ngModel)]="resposta.cat7" value="5">
+        <label class="form-check-label" for="flexRadioDefault35">
+            Reuniões diárias rápidas
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">8. Como a solução de um problema é discutida??</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault36" [(ngModel)]="resposta.cat8" value="1">
+        <label class="form-check-label" for="flexRadioDefault36">
+            Em grupo
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault37" [(ngModel)]="resposta.cat8" value="2">
+        <label class="form-check-label" for="flexRadioDefault37">
+            Todos os colaboradores são chamados a participar
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault38" [(ngModel)]="resposta.cat8" value="3">
+        <label class="form-check-label" for="flexRadioDefault38">
+            Entre gerentes
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault39" [(ngModel)]="resposta.cat8" value="4">
+        <label class="form-check-label" for="flexRadioDefault39">
+            -----em aberto----
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault8" id="flexRadioDefault40" [(ngModel)]="resposta.cat8" value="5">
+        <label class="form-check-label" for="flexRadioDefault40">
+            Pelo dono do problema
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">9. Qual das opções abaixo a empresa oferece como atividade de autorregularão emocional?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault41" [(ngModel)]="resposta.cat9" value="1">
+        <label class="form-check-label" for="flexRadioDefault41">
+            Práticas de meditacao (voluntária)
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault42" [(ngModel)]="resposta.cat9" value="2">
+        <label class="form-check-label" for="flexRadioDefault42">
+            Happyhours entre colaboradores (fim de semana/expediente)
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault43" [(ngModel)]="resposta.cat9" value="3">
+        <label class="form-check-label" for="flexRadioDefault43">
+            Treinamentos compulsórios
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault44" [(ngModel)]="resposta.cat9" value="4">
+        <label class="form-check-label" for="flexRadioDefault44">
+            Treinamentos com situações vivenciadas pela empresa
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault45" [(ngModel)]="resposta.cat9" value="5">
+        <label class="form-check-label" for="flexRadioDefault45">
+            -----em aberto----
+        </label>
+    </div>
+    <br>
+    <h3 class="heading">10. Como a empresa costuma encontrar saídas para problemas de produção sem solução aparente?</h3>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault46" [(ngModel)]="resposta.cat10" value="1">
+        <label class="form-check-label" for="flexRadioDefault46">
+            Diretoria e coordenação buscam soluções e distribuem para o time
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault47" [(ngModel)]="resposta.cat10" value="2">
+        <label class="form-check-label" for="flexRadioDefault47">
+            ----em aberto-----
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault48" [(ngModel)]="resposta.cat10" value="3">
+        <label class="form-check-label" for="flexRadioDefault48">
+            Busca consultoria especializada fora da empresa
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault49" [(ngModel)]="resposta.cat10" value="4">
+        <label class="form-check-label" for="flexRadioDefault49">
+            Tem equipe interna montada para soluções
+        </label>
+    </div>
+    <br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault50" [(ngModel)]="resposta.cat10" value="5">
+        <label class="form-check-label" for="flexRadioDefault50">
+            Busca soluções dentro do time
+        </label>
+    </div>
+    <br>
+          <button (click)="saveResposta()" class="button">Enviar</button>
+    </div>
+    <div *ngIf="submited2">
+        <app-resultado resultado={{categoria}}></app-resultado>
+    </div>

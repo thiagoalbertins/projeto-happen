@@ -1,0 +1,41 @@
+<div class="submit-form">
+    <div *ngIf="!submited1">
+        <form class="row g-3">
+            <div class="col-12">
+              <label for="name" class="form-label">Nome Completo</label>
+              <input type="text" class="form-control" id="name" [(ngModel)]="cliente.name" name="name"/>
+            </div>
+            <div class="col-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" placeholder="exemplo@gmail.com" id="email" [(ngModel)]="cliente.email" name="email"/>
+            </div>
+            <div class="col-6">
+              <label for="telephone" class="form-label">Telefone</label>
+              <input type="text" class="form-control" placeholder="(XX) X.XXXX.XXX" id="telephone" [(ngModel)]="cliente.telephone" name="telephone"/>
+            </div>
+            <div class="col-12">
+              <label for="companyname" class="form-label">Empresa</label>
+              <input type="text" class="form-control" id="companyname" [(ngModel)]="cliente.companyname" name="companyname"/>
+            </div>
+            <div class="col-4">
+              <label for="companyincome" class="form-label">Renda da Empresa</label>
+              <input type="text" class="form-control" id="companyincome" [(ngModel)]="cliente.companyincome" name="companyincome"/>
+            </div>
+            <div class="col-4">
+              <label for="totalemployee" class="form-label">Nº de Funcionários</label>
+              <input type="text" class="form-control" id="totalemployee" [(ngModel)]="cliente.totalemployee" name="totalemployee"/>
+            </div>
+            <div class="col-4">
+              <label for="rhemployee" class="form-label">Nº de Funcionários RH</label>
+              <input type="text" class="form-control" id="rhemployee" [(ngModel)]="cliente.rhemployee" name="rhemployee"/>
+            </div>
+            <p>{{ message }}</p>
+            <button (click)="saveCliente()" class="btn btn-success">Enviar</button>
+            <br>
+            <br>
+          </form>
+    </div>
+    <div *ngIf="submited1">
+        <app-perguntas participantid={{getParticipantId()}}></app-perguntas>
+      </div>
+</div>
